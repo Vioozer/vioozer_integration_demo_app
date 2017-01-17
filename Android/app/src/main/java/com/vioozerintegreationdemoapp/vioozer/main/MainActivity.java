@@ -22,6 +22,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView mInitializationTV;
     private Button mMyActivityBTN, mMyAskAQuestionBTN;
     private View mInitializationUnderLineView;
+    
+	
+	/*
+	A valid Vioozer API Key is required.
+	*/
+	
+	
+	private static final String API_KEY = 0;  
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +41,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         vioozer = VioozerAPI.sharedInstance(this);
 
 
-/* Contact adam@vioozer.com for an API Key! */
-        vioozer.initialize(0, new VioozerEventListener() {
+        vioozer.initialize(API_KEY, new VioozerEventListener() {
             @Override
             public void OnVioozerFinishedInitialized() {
 
