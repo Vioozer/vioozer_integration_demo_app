@@ -20,5 +20,5 @@ In order to receive remote notifications ("push messages"):
 /////////////////////////////////////////////////////////////////////////////
 ```
 
-## Certificate (optional)
-In order to receive remote notifications ("push"), xxx
+* Create an App Id and valid provision.
+* Create an APNS certificate and send us a `.p12` file (if it's password-protected, please send the password as well).
