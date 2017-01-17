@@ -1,3 +1,3 @@
 # Vioozer Integration demo app
 
-Vioozer SDK
+Vioozer SDK integrated into a minimal app.

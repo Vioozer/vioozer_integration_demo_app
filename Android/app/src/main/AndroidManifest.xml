@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.vioozer.vioozerintegreationdemoap">
+
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- for map -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- for push -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <!-- for push WITH GCM-->
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission
+        android:name="com.vioozer.vioozersdk.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- for push WITH GCM-->
+
+    <!-- for network name -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- for location service -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <!-- to disconnect G+ -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- for the bug in android 4.1 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- for the silent push optimize -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme" >
+        <activity android:name="com.vioozerintegreationdemoapp.vioozer.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <receiver
+            android:name="com.vioozer.vioozersdk.VioozerGcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="YOUR_PACKAGE_NAME"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.vioozer.vioozersdk.VioozerIncQstTimeReceiver" >
+        </receiver>
+        <receiver
+            android:name="com.vioozer.vioozersdk.services.VioozerInstallReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerGeneralMessageActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerFullScreenImage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerAnswerToQuestionFeed"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerAnswerReceived"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerAskMultipleQuestions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerAnswerReceivedFeed"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerMultipleAnswersRecieved"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerMyActivitiesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerAnswerQuestion"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerAnswerQuestionFeed"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerThanksActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.camera.CameraActivity">
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerShowMultipleAnswers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerNewFullScreenImage"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <service android:name="com.vioozer.vioozersdk.services.VioozerCancelRe_Alarm" >
+        </service>
+
+        <!-- Push optimization -->
+        <receiver android:name="com.vioozer.vioozersdk.VioozerBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <!-- for push WITH FIREBASE-->
+
+        <service android:name="com.vioozer.vioozersdk.services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.vioozer.vioozersdk.services.FirebaseIDService"    android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- for push WITH FIREBASE-->
+        <!--Receiver for plug/unplug charger-->
+        <receiver android:name="com.vioozer.vioozersdk.services.PowerConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Receiver for GPS status -->
+        <receiver
+            android:name="com.vioozer.vioozersdk.server.VioozerVolleyRequestFactory$GpsStateReceiver"
+            android:label="GpsStatus" >
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.vioozer.vioozersdk.VioozerGcmIntentService" />
+        <service android:name="com.vioozer.vioozersdk.services.VioozerService" />
+
+        <service
+            android:name="com.vioozer.vioozersdk.util.PushService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.vioozer.vioozersdk.server.VioozerVolleyRequestFactory$NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.vioozer.vioozersdk.services.VioozerWifiOnOffBrodcastRecciver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.vioozer.vioozersdk.activities.VioozerSearchContainer"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/map_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VioozerIntegreationDemoApp</string>
+    <string name="my_activity">My Activity</string>
+    <string name="ask_a_question">Ask a question</string>
+    <string name="initializing">INITIALIZING...</string>
+    <string name="initialization_ok">INITIALIZATION OK</string>
+    <string name="initialization_error">INITIALIZATION ERROR</string>
+
+
+    <string name="map_key">AIzaSyACF2QxpSW0MyHDeDvwWFYCOJ1ubHlK1Uk</string>
+
+</resources>
