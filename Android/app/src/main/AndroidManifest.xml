@@ -228,7 +228,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="@string/map_key" />
+            android:value="YOUR API_KEY" />
     </application>
 
 </manifest>
