@@ -1,10 +1,13 @@
 # Instructions
 
-## App Id
-Add an app id to the
+## API Key
+Add a Vioozer API Key to the `application:didFinishLaunchingWithOptions:` method, and uncomment the following line:
 
-## Api Key
-Add a Vioozer API Key to 
+    //    NSString* vioozerAPIKey = <Enter your app key here>;
+
+## App 
+Set an app key
+
 
 ## Certificate (optional)
 In order to receive remote notifications ("push"), xxx
