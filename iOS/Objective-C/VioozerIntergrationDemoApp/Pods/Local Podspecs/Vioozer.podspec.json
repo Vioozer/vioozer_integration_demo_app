@@ -1,0 +1,51 @@
+{
+  "name": "Vioozer",
+  "version": "0.0.1",
+  "summary": "A short description of PodTest.",
+  "description": "Vioozer iOS SDK",
+  "homepage": "https://www.vioozer.com/",
+  "license": "Proprietary and Confidential, use only with explicit signed consent from owner.",
+  "authors": {
+    "Adam Matan": "adam@vioozer.com",
+    "Uri Bornstein": "uri@vioozer.com"
+  },
+  "social_media_url": "https://www.facebook.com/vioozer/",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/Vioozer/CocoaPods.git"
+  },
+  "source_files": [
+    "Classes",
+    "VioozerSDK-lib/*.{h,nib,ttf}"
+  ],
+  "public_header_files": "VioozerSDK-lib/*.h",
+  "resources": "VioozerSDK-lib/VioozerResources.bundle",
+  "preserve_paths": [
+    "VioozerSDK-lib/libVioozerSDK.a",
+    "VioozerSDK-lib/*.{h,nib,ttf}"
+  ],
+  "vendored_libraries": "VioozerSDK-lib/libVioozerSDK.a",
+  "libraries": "GoogleAnalytics",
+  "frameworks": [
+    "ImageIO",
+    "AVFoundation",
+    "QuartzCore",
+    "CoreMedia",
+    "SystemConfiguration",
+    "CoreData",
+    "Foundation"
+  ],
+  "dependencies": {
+    "Google/Analytics": [
+
+    ],
+    "AFNetworking": [
+      "~> 2.5"
+    ],
+    "SVProgressHUD": [
+
+    ]
+  }
+}
