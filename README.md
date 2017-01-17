@@ -1,2 +1,3 @@
-# vioozer_integration_demo_app
-# vioozer_integration_demo_app
+# Vioozer Integration demo app
+
+Vioozer SDK
