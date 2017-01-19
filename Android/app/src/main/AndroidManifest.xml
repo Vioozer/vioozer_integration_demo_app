@@ -54,6 +54,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+		        android:name="android.support.multidex.MultiDexApplication"
+
         android:theme="@style/AppTheme"
         tools:replace="android:theme" >
         <activity android:name="com.vioozerintegreationdemoapp.vioozer.main.MainActivity">
