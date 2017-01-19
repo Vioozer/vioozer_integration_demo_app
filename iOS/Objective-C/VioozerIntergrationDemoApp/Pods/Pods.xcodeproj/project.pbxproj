@@ -101,6 +101,7 @@
 
 /* Begin PBXFileReference section */
 		013BBC743B67FA50B9DEDC82D821461E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		026BD3BA5C4F3B4CD4CD18A28B04B280 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		040980B370F4C5E59A3483DC3AA81992 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		1168F6B30F8773043CAA5FD067784653 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		12813E206939EA683E48D7E168E002D3 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		4F85F6622521DF90ADF1F926394FF5EF /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		51743C6E6E9504A06822A42E6CEC556C /* VioozerSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VioozerSDK.h; path = "VioozerSDK-lib/VioozerSDK.h"; sourceTree = "<group>"; };
 		52C8C41F8B712D4BC2CCFB1A75405831 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		5373ADD1575A570C10D2C19CF97F6276 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		541DD3FAA1158C327E584FE314124A96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D43AFA5C40898DB5243F69A3859B4C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		589D52B0FF4B0733894CBE5F4CE93A96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -403,14 +403,6 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		4939575C069992B6FAF59C505464344E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5373ADD1575A570C10D2C19CF97F6276 /* FirebaseCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		51EF93E57E88F0FC189D01D913525973 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,7 +545,7 @@
 		A26795450DBCFD0E52C5A741382954ED /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				4939575C069992B6FAF59C505464344E /* Frameworks */,
+				EAAE4E27491CAB334E33E64AEAEDC397 /* Frameworks */,
 			);
 			path = FirebaseCore;
 			sourceTree = "<group>";
@@ -688,6 +680,14 @@
 				EA82E282C4C14E522ABB21F9EC057356 /* AFURLConnectionOperation.m */,
 			);
 			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		EAAE4E27491CAB334E33E64AEAEDC397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				026BD3BA5C4F3B4CD4CD18A28B04B280 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F8E6D68192BA7E3CD8326110D915A99E /* GoogleSymbolUtilities */ = {
