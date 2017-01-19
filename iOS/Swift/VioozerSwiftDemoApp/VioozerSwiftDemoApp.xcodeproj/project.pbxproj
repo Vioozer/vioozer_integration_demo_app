@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90A9BE371E2E59E500DD3D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9BE361E2E59E500DD3D92 /* AppDelegate.swift */; };
+		90A9BE391E2E59E500DD3D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9BE381E2E59E500DD3D92 /* ViewController.swift */; };
+		90A9BE491E2E5A0100DD3D92 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90A9BE481E2E5A0100DD3D92 /* Podfile */; };
+		90A9BE501E2E5C3D00DD3D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A9BE4E1E2E5C3D00DD3D92 /* LaunchScreen.storyboard */; };
+		90A9BE511E2E5C3D00DD3D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A9BE4F1E2E5C3D00DD3D92 /* Main.storyboard */; };
+		90A9BE531E2E61B500DD3D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A9BE521E2E61B500DD3D92 /* Assets.xcassets */; };
+		B9CF61C0083B8D1E9FBE91B5 /* Pods_VioozerSwiftDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAA0A8708D047F7A2BF54AD /* Pods_VioozerSwiftDemoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06A4709E90A6B1AF0A534273 /* Pods-VioozerSwiftDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioozerSwiftDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VioozerSwiftDemoApp/Pods-VioozerSwiftDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		90A5CDC41E30BDC300707211 /* VioozerSwiftDemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VioozerSwiftDemoApp.entitlements; sourceTree = "<group>"; };
+		90A9BE331E2E59E500DD3D92 /* VioozerSwiftDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VioozerSwiftDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A9BE361E2E59E500DD3D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90A9BE381E2E59E500DD3D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90A9BE421E2E59E500DD3D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90A9BE481E2E5A0100DD3D92 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90A9BE4A1E2E5ABA00DD3D92 /* VioozerSwiftDemoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VioozerSwiftDemoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		90A9BE4E1E2E5C3D00DD3D92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90A9BE4F1E2E5C3D00DD3D92 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		90A9BE521E2E61B500DD3D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DAA0A8708D047F7A2BF54AD /* Pods_VioozerSwiftDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VioozerSwiftDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DEEAE0BC4FFD8C5B7E03DCD /* Pods-VioozerSwiftDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VioozerSwiftDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-VioozerSwiftDemoApp/Pods-VioozerSwiftDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90A9BE301E2E59E500DD3D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CF61C0083B8D1E9FBE91B5 /* Pods_VioozerSwiftDemoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B6756723AA50E1E360225A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA0A8708D047F7A2BF54AD /* Pods_VioozerSwiftDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F7985EACC73715EF700374F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06A4709E90A6B1AF0A534273 /* Pods-VioozerSwiftDemoApp.debug.xcconfig */,
+				9DEEAE0BC4FFD8C5B7E03DCD /* Pods-VioozerSwiftDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90A9BE2A1E2E59E500DD3D92 = {
+			isa = PBXGroup;
+			children = (
+				90A9BE481E2E5A0100DD3D92 /* Podfile */,
+				90A9BE351E2E59E500DD3D92 /* VioozerSwiftDemoApp */,
+				90A9BE341E2E59E500DD3D92 /* Products */,
+				0F7985EACC73715EF700374F /* Pods */,
+				00B6756723AA50E1E360225A /* Frameworks */,
+				90A9BE4A1E2E5ABA00DD3D92 /* VioozerSwiftDemoApp-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		90A9BE341E2E59E500DD3D92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90A9BE331E2E59E500DD3D92 /* VioozerSwiftDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90A9BE351E2E59E500DD3D92 /* VioozerSwiftDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				90A5CDC41E30BDC300707211 /* VioozerSwiftDemoApp.entitlements */,
+				90A9BE4E1E2E5C3D00DD3D92 /* LaunchScreen.storyboard */,
+				90A9BE4F1E2E5C3D00DD3D92 /* Main.storyboard */,
+				90A9BE361E2E59E500DD3D92 /* AppDelegate.swift */,
+				90A9BE381E2E59E500DD3D92 /* ViewController.swift */,
+				90A9BE521E2E61B500DD3D92 /* Assets.xcassets */,
+				90A9BE421E2E59E500DD3D92 /* Info.plist */,
+			);
+			path = VioozerSwiftDemoApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90A9BE321E2E59E500DD3D92 /* VioozerSwiftDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90A9BE451E2E59E500DD3D92 /* Build configuration list for PBXNativeTarget "VioozerSwiftDemoApp" */;
+			buildPhases = (
+				BC3984BDFADCBA70546F6C59 /* [CP] Check Pods Manifest.lock */,
+				90A9BE2F1E2E59E500DD3D92 /* Sources */,
+				90A9BE301E2E59E500DD3D92 /* Frameworks */,
+				90A9BE311E2E59E500DD3D92 /* Resources */,
+				FFF4C799586B8D1331E0CA6F /* [CP] Embed Pods Frameworks */,
+				1D843DD04F1FCC99CF1E9B29 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VioozerSwiftDemoApp;
+			productName = VioozerSwiftDemoApp;
+			productReference = 90A9BE331E2E59E500DD3D92 /* VioozerSwiftDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90A9BE2B1E2E59E500DD3D92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Yedidya Reiss";
+				TargetAttributes = {
+					90A9BE321E2E59E500DD3D92 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NJUPJ7252V;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 90A9BE2E1E2E59E500DD3D92 /* Build configuration list for PBXProject "VioozerSwiftDemoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90A9BE2A1E2E59E500DD3D92;
+			productRefGroup = 90A9BE341E2E59E500DD3D92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90A9BE321E2E59E500DD3D92 /* VioozerSwiftDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90A9BE311E2E59E500DD3D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A9BE501E2E5C3D00DD3D92 /* LaunchScreen.storyboard in Resources */,
+				90A9BE491E2E5A0100DD3D92 /* Podfile in Resources */,
+				90A9BE531E2E61B500DD3D92 /* Assets.xcassets in Resources */,
+				90A9BE511E2E5C3D00DD3D92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D843DD04F1FCC99CF1E9B29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VioozerSwiftDemoApp/Pods-VioozerSwiftDemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC3984BDFADCBA70546F6C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF4C799586B8D1331E0CA6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VioozerSwiftDemoApp/Pods-VioozerSwiftDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90A9BE2F1E2E59E500DD3D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A9BE391E2E59E500DD3D92 /* ViewController.swift in Sources */,
+				90A9BE371E2E59E500DD3D92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		90A9BE431E2E59E500DD3D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90A9BE441E2E59E500DD3D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90A9BE461E2E59E500DD3D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A4709E90A6B1AF0A534273 /* Pods-VioozerSwiftDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VioozerSwiftDemoApp/VioozerSwiftDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = NJUPJ7252V;
+				INFOPLIST_FILE = VioozerSwiftDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "VioozerSwiftDemoApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		90A9BE471E2E59E500DD3D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DEEAE0BC4FFD8C5B7E03DCD /* Pods-VioozerSwiftDemoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VioozerSwiftDemoApp/VioozerSwiftDemoApp.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = VioozerSwiftDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VioozerSwiftDemoApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90A9BE2E1E2E59E500DD3D92 /* Build configuration list for PBXProject "VioozerSwiftDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90A9BE431E2E59E500DD3D92 /* Debug */,
+				90A9BE441E2E59E500DD3D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90A9BE451E2E59E500DD3D92 /* Build configuration list for PBXNativeTarget "VioozerSwiftDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90A9BE461E2E59E500DD3D92 /* Debug */,
+				90A9BE471E2E59E500DD3D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90A9BE2B1E2E59E500DD3D92 /* Project object */;
+}
