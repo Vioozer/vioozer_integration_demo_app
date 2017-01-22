@@ -94,13 +94,13 @@
 //    
 //    NSDictionary* userInfo = notification.request.content.userInfo;
 //    if ([userInfo[@"VIOOZER"] isEqualToString:@"VIOOZER"]) {
-//        // Hanldes Vioozer SDK Push messages
+//        // Handles Vioozer SDK Push messages
 //        [VIOOZER_API receivedRemoteNotification:userInfo withApplicationState:
 //         [UIApplication sharedApplication].applicationState];
 //        completionHandler(UNNotificationPresentationOptionBadge);
 //    }
 //    else {
-//        // Hanldes the app push messages
+//        // Handles the app push messages
 //        completionHandler(UNNotificationPresentationOptionNone);
 //    }
 //}

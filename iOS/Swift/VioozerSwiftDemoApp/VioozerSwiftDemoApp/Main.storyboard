@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VioozerSwiftDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wno-z2-fqB">
+                                <state key="normal" title="Ask a Question">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentQuestion" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cn-Hc-2AK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-N0-RUg">
+                                <state key="normal" title="My Feed">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentVioozerActivity" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oA-Wo-mEZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INITIALIZING..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-xC-bWO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mnm-Sx-1S2">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="v08-g1-IXy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.12156862745098039" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mnm-Sx-1S2" firstAttribute="top" secondItem="rY4-xC-bWO" secondAttribute="bottom" constant="8" id="5qc-sD-C2o"/>
+                            <constraint firstItem="Wno-z2-fqB" firstAttribute="top" secondItem="ec5-N0-RUg" secondAttribute="bottom" constant="50" id="BB7-gM-Gp6"/>
+                            <constraint firstItem="Mnm-Sx-1S2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="M38-A1-BW2"/>
+                            <constraint firstItem="ec5-N0-RUg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y4I-XR-TLa"/>
+                            <constraint firstItem="rY4-xC-bWO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zmp-9z-clk"/>
+                            <constraint firstItem="Wno-z2-fqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZy-qu-FOW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wno-z2-fqB" secondAttribute="bottom" constant="125" id="rzJ-Kk-nWR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mnm-Sx-1S2" secondAttribute="trailing" constant="50" id="t4l-LR-T41"/>
+                            <constraint firstItem="rY4-xC-bWO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="144" id="wUq-4q-eeC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblSDKState" destination="rY4-xC-bWO" id="UiJ-ve-2y8"/>
+                        <outlet property="viewBaseLine" destination="Mnm-Sx-1S2" id="gpL-XV-Z9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="111"/>
+        </scene>
+    </scenes>
+</document>
