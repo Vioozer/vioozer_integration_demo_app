@@ -27,3 +27,10 @@ In order to receive remote notifications ("push messages"):
 /////////////////////////////////////////////////////////////////////////////
 ```
 
+## Step 3 - customize
+
+Follow [our online documentation](https://developer.vioozer.com/ios.html) to customize the SDK. For example, you can:
+
+* Create a question with a place name and address
+* Ask a question on multiple locations
+* Get the number of unread items in the user activity stream
