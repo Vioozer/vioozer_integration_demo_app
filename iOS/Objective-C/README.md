@@ -27,7 +27,7 @@ In order to receive remote notifications ("push messages"):
 /////////////////////////////////////////////////////////////////////////////
 ```
 
-## Step 3 - customize
+## Step 3 - Customize
 
 Follow [our online documentation](https://developer.vioozer.com/ios.html) to customize the SDK. For example, you can:
 
