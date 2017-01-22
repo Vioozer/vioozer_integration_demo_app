@@ -8,7 +8,8 @@ Add your API Key to `MainActivity.java`:
     private static final String API_KEY = 0;  
 
 ## Step 2 - Add the Firebase configuration file.
-Add your `google-services.json` from the Firebase console (the file is auto-generated for every android project). In order to receive push notifications, the server key should be shared with Vioozer (however, the SDK would work without it for testing).
+
+Add a `google-services.json` file from the Firebase console to the project. In order to receive push notifications, the server key from the console should be sent to Vioozer (however, the SDK would work without it for testing).
 
 ## Step 3 - Google Maps API Key
 Add your Google Maps API Key to the Manifest. The key is required in order to display a map when creating or answering a question.
