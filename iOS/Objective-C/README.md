@@ -5,15 +5,19 @@ Add a Vioozer API Key to the `application:didFinishLaunchingWithOptions:` method
 
     //    NSString* vioozerAPIKey = <Enter your app key here>;
 
-Clean (`⇧⌘K`) the project. The app is now ready - You can ask questions, see incoming questions in the *My Activity* page and answer them. 
+### Recommendations
+* Run `pod update` in order to get the latest SDK and dependencies.
+* Clean (`⇧⌘K`) the project. 
+
+The app is now ready - You can ask questions, see incoming questions in the *My Activity* page and answer them. 
 
 
 
-## Pod update - recommended
-Run `pod update` in order to get the latest SDK and dependencies.
-
-## Remote notifications - recommended
+## Step 2 - Remote notifications
 In order to receive remote notifications ("push messages"):
+
+* Create an App Id and valid provision.
+* Create an APNS certificate and send us a `.p12` file (if it's password-protected, please send the password as well).
 
 * Uncomment the code below this comment in `AppDelegate.m`:
 
@@ -23,5 +27,3 @@ In order to receive remote notifications ("push messages"):
 /////////////////////////////////////////////////////////////////////////////
 ```
 
-* Create an App Id and valid provision.
-* Create an APNS certificate and send us a `.p12` file (if it's password-protected, please send the password as well).
