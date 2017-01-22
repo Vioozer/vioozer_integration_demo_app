@@ -39,6 +39,6 @@ repositories {
     }
 }
   dependencies {
-    compile 'com.quickode.vioozersdk:Module_SDK:3.1.2'
+    compile 'com.quickode.vioozersdk:Module_SDK:3.1.3'
 
 }
